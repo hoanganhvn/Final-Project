@@ -22,6 +22,84 @@
   <body>
     <!-- /* Start Header */ -->
       <header class="header">
+
+        <!-- The Modal search-->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="blank-search"></div>
+                    <h2>TÌM KIẾM</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="search">
+                        <input class="col-sm-9 input" type="text" placeholder="Tìm kiếm sản phẩm">
+                        <i class='fa fa-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal login-->
+        <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div id="total">
+                    <div class="user-title">
+                        <h3>ĐĂNG NHẬP TÀI KHOẢN</h3>
+                        <span class="close1">&times;</span>
+                    </div>
+                    <form class="content" >
+                        <div class="container">
+                            <input id="username" value="" type="text" placeholder="Email" name="uname" required>
+                            <p id="warning1">* Bạn cần nhập đúng email</p>
+                            <input id="pass" type="password" value="" placeholder="Mật khẩu" name="psw" required>
+                            <p id="warning2">* Bạn cần nhập đúng password</p>
+                            <h6>
+                                Khi bạn nhấn vào nút đăng nhập là đồng ý vô điều kiện với <span class="policy"><a href="https://policies.google.com/terms">Điều khoản Dịch vụ</a></span> và <span class="policy"><a href="https://policies.google.com/privacy">Bảo mật</a></span> của chúng tôi.
+                            </h6>
+                            <button type="submit" id="myForm">ĐĂNG NHẬP</button>
+                        </div>
+                    </form>
+                    <h6 class="link-register">
+                        Khách hàng mới? <span class="policy"><a href="https://policies.google.com/privacy">Tạo tài khoản</a></span>
+                    </h6>
+                    <h6 class="link-register">
+                        Quên mật khẩu? <span class="policy"><a href="https://policies.google.com/privacy">Khôi phục mật khẩu</a></span>
+                    </h6>
+                </div>
+             </div>
+           </div>
+        </div>
+        <!-- The Modal cart-->
+        <div id="myModal2" class="modal">
+            <div class="modal-content">
+                <div class="cart-head">
+                    <span class="close2">&times;</span>
+                    <h3>Giỏ hàng</h3>
+                </div>
+                <div class="modal-header-cart">
+                    <div class="icon-cart">
+                        <i class="fa fa-cart-plus"></i>
+                    </div>
+                    <div class="word-cart">
+                        <h4>Hiện chưa có sản phẩm</h4>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="count-cart">
+                        <div class="count-money">
+                            <span>TỔNG TIỀN:</span>
+                            <span class="money-red">0₫</span>
+                        </div>
+                        <div class="btn-cart">
+                            <button class="money-cart1">XEM GIỎ HÀNG</button>
+                            <button class="money-cart2">THANH TOÁN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal-->
         <div class="topbar" id="topbar">
             <div class="container-fluid">
                 <div class="topbar-content text-center">
@@ -40,9 +118,11 @@
                 </div>
             </div>
             <div class="col-md-4 icon text-right">
-                <i class='fa fa-search'></i>
-                <i class='fa fa-user-circle'></i>
-                <i class="fa fa-shopping-bag"></i>
+                <i class='fa fa-search' id="myBtn"></i>
+               
+                <i class='fa fa-user-circle' id="myBtn1"></i>
+
+                <i class="fa fa-shopping-bag" id="myBtn2"></i>
             </div>
         </div>
         <div class="navbar">
@@ -125,7 +205,7 @@
                         <div class="row">
                             <div class="col-sm-1 blank">
                             </div>
-                            <div class="col-sm-2 foot-icon">
+                            <div class="col-sm-2 foot-icon-email">
                                 <i class="fa fa-envelope-open-o"></i>
                                 <span>
                                     Đăng ký nhận tin
@@ -133,7 +213,7 @@
                             </div>
                             <div class="col-sm-5 foot-email">
                                 <div class="row">
-                                    <input class="col-sm-9 input" type="text" placeholder="   Nhập email của bạn">
+                                    <input class="col-sm-9 input-email" type="text" placeholder="   Nhập email của bạn">
                                     <div class="col-sm-3 foot-input-email">
                                     ĐĂNG KÝ
                                     </div>
@@ -161,11 +241,21 @@
                                     <img src="https://theme.hstatic.net/1000309753/1000718324/14/logo_bct.png?v=209" alt="">
                                 </a>
                                 <div class="foot-icon">
-                                    <i class='fa fa-facebook'></i>
-                                    <i class='fa fa-twitter'></i>
-                                    <i class='fa fa-instagram'></i>
-                                    <i class='fa fa-google'></i>
-                                    <i class='fa fa-youtube-play'></i>
+                                    <i class='fa fa-facebook'>
+                                        <a href="https://fresh-organic-food.myharavan.com/"></a>
+                                    </i>
+                                    <i class='fa fa-twitter'>
+                                        <a href="https://fresh-organic-food.myharavan.com/"></a>
+                                    </i>
+                                    <i class='fa fa-instagram'>
+                                        <a href="https://fresh-organic-food.myharavan.com/"></a>
+                                    </i>
+                                    <i class='fa fa-google'>
+                                        <a href="https://fresh-organic-food.myharavan.com/"></a>
+                                    </i>
+                                    <i class='fa fa-youtube-play'>
+                                        <a href="https://fresh-organic-food.myharavan.com/"></a>
+                                    </i>
                                 </div>
                             </div>
                             <div class="col-sm-3 infomation">
@@ -180,14 +270,16 @@
                                 </div>
                                 <div class="phone">
                                     <i class='fa fa-phone'></i>
-                                    <span>
+                                    <span type="tel">
                                         1900.636.099
                                     </span>
                                 </div>
                                 <div class="fax">
                                     <i class='fa fa-print'></i>
                                     <span>
-                                        1900.636.099
+                                        <a href="tel:+1900636099">
+                                            1900.636.099
+                                        </a>
                                     </span>
                                 </div>
                                 <div class="email">
@@ -241,7 +333,7 @@
                                         Chính sách bảo mật
                                     </a>
                                 </span>     
-                                <spanh6>
+                                <span>
                                     <a href="https://fresh-organic-food.myharavan.com/pages/dieu-khoan-dich-vu">
                                         Điều khoản dịch vụ
                                     </a>
@@ -265,7 +357,7 @@
     </footer>
     <!-- /* End Footer */ -->
 
-
+    <script src="finalproject.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
