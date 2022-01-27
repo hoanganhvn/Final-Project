@@ -83,3 +83,11 @@ submit.addEventListener("click", function () {
         warning2.style.display = "block";
     }
 })
+
+// Mini menu
+let bars = document.getElementById("bars");
+
+bars.addEventListener("click",function(){
+    let navlist = document.querySelector(".navlist");
+    navlist.classList.toggle("active");
+});
