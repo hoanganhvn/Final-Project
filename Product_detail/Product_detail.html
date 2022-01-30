@@ -16,7 +16,7 @@
     
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="headerandfooter.css">
+    <link rel="stylesheet" href="Product_detail.css">
   </head>
 
   <body>
@@ -178,7 +178,7 @@
             <ul class="nav justify-content-center container-fluid">
                 <li class="nav-item">
                     <div class="nav-name home1">
-                        <a class="nav-link" href="index.html">Trang chủ</a>
+                        <a class="nav-link" href="../index.html">Trang chủ</a>
                         <div class="line1"></div>
                     </div>
                 </li>
@@ -202,7 +202,7 @@
                 </li>
                 <li class="nav-item">                    
                     <div class="nav-name home5">
-                        <a class="nav-link" href="blog/blog.html">Blog</a>
+                        <a class="nav-link" href="../Blog/blog.html">Blog</a>
                         <div class="line5"></div>
                     </div>
                 </li>
@@ -223,20 +223,102 @@
       
 
     <!-- /* Start Body */ -->
-    <div class="container-fluid text-center">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h1>
-        Phần body làm ở đây nha các e
-        </h1>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+    <div id = "Product">
+        <div class="product-breadcrumb">
+                <ol class ="product-text-breadcrumb">
+                    <li style="display: inline-block">
+                      <a href="../index.html">Trang chủ </a>
+                    </li>
+                    <li style="display: inline-block">
+                      /
+                    </li>
+                    <li style="display: inline-block">
+                    <span>Sản phẩm</span>
+                    </li>
+                </ol>
+        </div>
+        <div class="product-content">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <div class="product-visual">
+                            <div class="product-gallery">
+                                <div class ="gallery-img">
+                                    <a>
+                                <img src ="Product_images/luu-do-1_bc0171ffa80f4ae782f5757eecf1ab35_fb0cb5b099d54deba8cfa88b19abb394_compact.jpg"/>
+                                    </a> 
+                                </div>
+                                <div class ="gallery-img">
+                                    <a>
+                                <img src ="Product_images/luu-do-2_c8351afb070a4fcf89390aa6f6dd85e7_165f12863d8f4e29b1d3927c8ffcce73_compact.jpg"/>
+                                    </a> 
+                                </div>
+                                <div class ="gallery-img">
+                                    <a>
+                                <img src ="Product_images/luu-do_d1353f79422c48f1ab3ecf1b3d28e557_94a064f7ccee4826bd7e6963c00dc10a_compact.jpg"  />
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="product-slide scroll">
+                                <ul>
+                                    <li>
+                                        <img src="Product_images/luu-do-1_bc0171ffa80f4ae782f5757eecf1ab35_fb0cb5b099d54deba8cfa88b19abb394_master.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="Product_images/luu-do-2_c8351afb070a4fcf89390aa6f6dd85e7_165f12863d8f4e29b1d3927c8ffcce73_master.jpg">
+                                    </li>
+                                    <li>
+                                        <img src="Product_images/luu-do_d1353f79422c48f1ab3ecf1b3d28e557_94a064f7ccee4826bd7e6963c00dc10a_master.jpg">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                       <div class="product-title">
+                           <h1>Lựu Đỏ Peru </h1>
+                       </div>
+                       <div class="product-price">
+                        200,000₫
+                        </div>
+                        <form class="Add-to-card-form">
+                            <div>
+                                <input type ="button" value="-" onclick="minusQuantity" class="qty-btn">
+                                <input type ="text" id="quantity" value="1" min="1" class="quantity-selector">
+                                <input type ="button" value="+" onclick="plusQuantity" class="qty-btn">
+                            </div>
+                            <div>
+                                <button type="button" id="add-to-cart" class="add-cart">Thêm vào giỏ</button>
+                            </div>
+                        </form>
+
+                        <div class="product-description">
+                            <div class="title-bl">
+                                <h2>Mô tả</h2>
+                            </div>
+                            <div class="description-content">
+                                <p><strong>Lựu Đỏ Peru (620g-650g/trái)</strong>
+                               là nguồn cung cấp dồi dào vitamin A, C, E và nhiều khoáng chất khác. Lựu là loại trái cây rất tốt cho sức khỏe.</p>
+                               <p><h2>Thông tin dinh dưỡng:</h2></p>
+                               <ul style="list-style:circle">
+                                   <li>Lựu chứa nhiều polyphenol – chất hóa học giúp làm giảm quá trình sưng phù ở bệnh tim. Ngoài ra, lựu còn có thể làm giảm độ dày thành động mạch, giảm việc hình thành mảng bán và giảm cholesterol xấu trong cơ thể.</li>
+                                   <li>Nhờ chất polyphenol và các chất chống oxy hóa trong quả lựu nên có thể làm cản trở sự hình thành các gốc tự do, từ đó ngăn ngừa sự phát triển của tế bào ung thư.</li>
+                                   <li>Bên cạnh đó, lựu là loại quả giàu vitamin C nên có thể giúp tăng cường hệ miễn dịch và giúp các tế bào của cơ thể chống lại các tác nhân gây ung thư.</li>
+                                   <li>Ăn lựu cho cảm giác no cũng như có khả năng ức chế sự thèm ăn và giúp chống béo phì hiệu quả. Nếu uống nước ép lựu mỗi ngày sẽ có tác dụng duy trì cân nặng ổn định.</li>
+                                   <li>Lựu giàu chất chống viêm khớp nên có tác dụng giảm viêm và cải thiện các triệu chứng của bệnh.</li>
+                                   <li>Lựu có thể giúp tạo ra hồng cầu trong cơ thể và làm tăng lượng haemoglobin trong máu. Ăn lựu còn giúp đáp ứng tốt nhu cầu chất xơ, vitamin, kali hàng ngày cho trẻ.</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>  
+                </div>
+            </div>
+        </div>
     </div>
     <!-- /* End Body */ -->
 
@@ -405,7 +487,7 @@
     </footer>
     <!-- /* End Footer */ -->
 
-    <script src="finalproject.js"></script>
+    <script src="Product_detail.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
