@@ -100,6 +100,46 @@
                 </div>
             </div>
         </div>
+        <div class="navlist">
+            <ul>
+                <li>
+                    <a href="#">
+                    Trang chủ
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+                <li>
+                    <a href="#">
+                        Header
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+                <li>
+                    <a href="#">
+                        Sản phẩm
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+                <li>
+                    <a href="#">
+                        Product Views
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+                <li>
+                    <a href="#">
+                        Blog
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+                <li>
+                    <a href="LandingPage.index.html">
+                        Landing Page
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+            </ul>
+        </div>
         <!-- End Modal-->
         <div class="topbar" id="topbar">
             <div class="container-fluid">
@@ -109,21 +149,30 @@
             </div>
         </div>
         <div class="logo container-fluid">
-            <div class="col-md-4">
+            <div class="col-md-2 fa-bars-icon" id="bars">
+                <i class="fa fa-bars"></i>
             </div>
-            <div class="col-md-4 header-logo">	
+            <div class="col-md-8 header-logo">	
                 <div class="wrap-logo text-center">
                     <a href="https://fresh-organic-food.myharavan.com">
                     Fresh Organic
                     </a>
                 </div>
             </div>
-            <div class="col-md-4 icon text-right">
-                <i class='fa fa-search' id="myBtn"></i>
+            <div class="col-md-2 icon text-right">
+                <i class='fa fa-search fa-search1' id="myBtn"></i>
                
                 <i class='fa fa-user-circle' id="myBtn1"></i>
 
                 <i class="fa fa-shopping-bag" id="myBtn2"></i>
+            </div>
+        </div>
+        <div class="search-input container-fluid">
+            <div class="col-md-4">
+                <div class="search-input-btn">
+                    <input class="col-sm-9 " type="text" placeholder="Tìm kiếm sản phẩm">
+                    <i class='fa fa-search'></i>
+                </div>
             </div>
         </div>
         <div class="navbar">
@@ -160,7 +209,7 @@
                 </li>
                 <li class="nav-item">                    
                     <div class="nav-name home6">
-                        <a class="nav-link" href="#">Landing Page</a>
+                        <a class="nav-link" href="LandingPage.index.html">Landing Page</a>
                         <div class="line6"></div>
                     </div>
                 </li>
@@ -243,159 +292,174 @@
 
 
     <!-- /* Start Footer */ -->
-    <footer class="footertotal">
-        <div class="footer">
-            <div class="container-fluid">
-                <div class="col-md-12">
-                    <div class="foot-up">
-                        <div class="row">
-                            <div class="col-sm-1 blank">
-                            </div>
-                            <div class="col-sm-2 foot-icon">
-                                <i class="fa fa-envelope-open-o"></i>
-                                <span>
-                                    Đăng ký nhận tin
-                                </span>
-                            </div>
-                            <div class="col-sm-5 foot-email">
-                                <div class="row">
-                                    <input class="col-sm-9 input" type="text" placeholder="   Nhập email của bạn">
-                                    <button id="btn">
-                                        ĐĂNG KÝ
-                                    </button>
+   <footer class="footertotal">
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="foot-up">
+                <div class="row">
+                    <div class="col-md-1 col-lg-1 blank">
+                    </div>
+                    <div class="col-md-11 col-lg-2 foot-icon-email">
+                        <i class="fa fa-envelope-open-o"></i>
+                        <span>
+                            Đăng ký nhận tin
+                        </span>
+                    </div>
+                    <div class="col-md-12 col-lg-5 foot-email">
+                        <div class="container">
+                            <div class="row">
+                                <input class="col-md-6 col-lg-9 input-email" type="text" placeholder="   Nhập email của bạn">
+                                <div class="col-md-2 col-lg-3 foot-input-email" id="btn">
+                                ĐĂNG KÝ
                                 </div>
                             </div>
-                            <div class="col-sm-4 foot-register">
-                                <i class='fa fa-phone phone-icon'></i>
-                                <span> Hỗ trợ / Mua hàng: </span>
-                                <span class="hotline">1900 636 099</span>
-                                
-                            </div>
-                            <div class="foot-icon-support"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-1 col-lg-1 blank">
+                    </div>
+                    <div class="col-md-12 col-lg-3 foot-register">
+                        <i class='fa fa-phone phone-icon'></i>
+                        <span> Hỗ trợ / Mua hàng: </span>
+                        <span class="hotline">1900 636 099</span>
+                        
+                    </div>
+                    <div class="foot-icon-support"></div>
+                </div>
+            </div>
+            <div class="foot-middle">
+                <div class="row">
+                    <div class="col-lg-1 blank">
+                    </div>
+                    <div class="col-md-6 col-lg-4 introdution">
+                        <h3>Giới thiệu</h3>
+                        <span>
+                            Fresh Organic trang mua sắm trực tuyến của thương hiệu thời trang Lama, thời trang nam, nữ, phụ kiện, giúp bạn tiếp cận xu hướng thời trang mới nhất.
+                        </span>
+                        <a href="https://fresh-organic-food.myharavan.com/">
+                            <img src="https://theme.hstatic.net/1000309753/1000718324/14/logo_bct.png?v=209" alt="">
+                        </a>
+                        <div class="foot-icon">
+                            <i class='fa fa-facebook'>
+                                <a href="https://fresh-organic-food.myharavan.com/"></a>
+                            </i>
+                            <i class='fa fa-twitter'>
+                                <a href="https://fresh-organic-food.myharavan.com/"></a>
+                            </i>
+                            <i class='fa fa-instagram'>
+                                <a href="https://fresh-organic-food.myharavan.com/"></a>
+                            </i>
+                            <i class='fa fa-google'>
+                                <a href="https://fresh-organic-food.myharavan.com/"></a>
+                            </i>
+                            <i class='fa fa-youtube-play'>
+                                <a href="https://fresh-organic-food.myharavan.com/"></a>
+                            </i>
                         </div>
                     </div>
-                    <div class="foot-middle">
-                        <div class="row">
-                            <div class="col-sm-1 blank">
-                            </div>
-                            <div class="col-sm-4 introdution">
-                                <h3>Giới thiệu</h3>
+                    <div class="col-md-6 col-lg-3 infomation">
+                        <h3>Thông tin liên hệ</h3>
+                        <div class="address">
+                            <i class='fa fa-map-marker'></i>
+                            <div class="address-detail">
                                 <span>
-                                    Fresh Organic trang mua sắm trực tuyến của thương hiệu thời trang Lama, thời trang nam, nữ, phụ kiện, giúp bạn tiếp cận xu hướng thời trang mới nhất.
+                                    Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.
                                 </span>
-                                <a href="https://fresh-organic-food.myharavan.com/">
-                                    <img src="https://theme.hstatic.net/1000309753/1000718324/14/logo_bct.png?v=209" alt="">
+                            </div>
+                        </div>
+                        <div class="phone">
+                            <i class='fa fa-phone'></i>
+                            <span type="tel">
+                                1900.636.099
+                            </span>
+                        </div>
+                        <div class="fax">
+                            <i class='fa fa-print'></i>
+                            <span>
+                                <a href="tel:+1900636099">
+                                    1900.636.099
                                 </a>
-                                <div class="foot-icon">
-                                    <i class='fa fa-facebook'></i>
-                                    <i class='fa fa-twitter'></i>
-                                    <i class='fa fa-instagram'></i>
-                                    <i class='fa fa-google'></i>
-                                    <i class='fa fa-youtube-play'></i>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 infomation">
-                                <h3>Thông tin liên hệ</h3>
-                                <div class="address">
-                                    <i class='fa fa-map-marker'></i>
-                                    <div class="address-detail">
-                                        <span>
-                                            Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="phone">
-                                    <i class='fa fa-phone'></i>
-                                    <span>
-                                        1900.636.099
-                                    </span>
-                                </div>
-                                <div class="fax">
-                                    <i class='fa fa-print'></i>
-                                    <span>
-                                        1900.636.099
-                                    </span>
-                                </div>
-                                <div class="email">
-                                    <i class='fa fa-envelope'></i>
-                                    <span>
-                                        hi@haravan.com
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-sm-2 link">
-                                <h3>
-                                    Liên kết
-                                </h3>
-                                <span>
-                                    <a href="https://fresh-organic-food.myharavan.com/collections/onsale">
-                                        Sản phẩm khuyến mãi
-                                    </a>
-                                </span>
-                                <span>
-                                    <a href="https://fresh-organic-food.myharavan.com/collections/hot-products">
-                                        Sản phẩm nổi bật
-                                    </a>
-                                </span>
-                                <span>
-                                    <a href="https://fresh-organic-food.myharavan.com/collections/all">
-                                        Tất cả sản phẩm
-                                    </a>
-                                </span>     
-                            </div>
-                            <div class="col-sm-2 support">
-                                <h3>
-                                    Hỗ trợ
-                                </h3>
-                                <span>
-                                    <a id="Sea" href="1Searching.index.html">
-                                        Tìm kiếm
-                                    </a>
-                                </span>
-                                <span>
-                                    <a id="Int" href="2Introduction.index.html">
-                                        Giới thiệu
-                                    </a>
-                                </span>
-                                <span>
-                                    <a id="Res" href="3Restore.index.html">
-                                        Chính sách đổi trả
-                                    </a>
-                                </span>     
-                                <span>
-                                    <a id="Pri" href="4Privacy.index.html">
-                                        Chính sách bảo mật
-                                    </a>
-                                </span>     
-                                <spanh6>
-                                    <a id="Ser" href="5Service.index.html">
-                                        Điều khoản dịch vụ
-                                    </a>
-                                </span>     
-                                <span>
-                                    <a id="Con" href="6Contact.index.html">
-                                        Liên hệ
-                                    </a>
-                                </span>     
-                            </div>
+                            </span>
+                        </div>
+                        <div class="email">
+                            <i class='fa fa-envelope'></i>
+                            <span>
+                                hi@haravan.com
+                            </span>
                         </div>
                     </div>
-                    <div class="foot-down">
-                        <div class="topbar-content text-center">
-                            <p>Copyright © 2022 Fresh Organic. Powered by Haravan</p>
-                        </div>
+                    <div class="col-md-6 col-lg-2 link">
+                        <h3>
+                            Liên kết
+                        </h3>
+                        <span>
+                            <a href="https://fresh-organic-food.myharavan.com/collections/onsale">
+                                Sản phẩm khuyến mãi
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://fresh-organic-food.myharavan.com/collections/hot-products">
+                                Sản phẩm nổi bật
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://fresh-organic-food.myharavan.com/collections/all">
+                                Tất cả sản phẩm
+                            </a>
+                        </span>     
+                    </div>
+                    <div class="col-md-6 col-lg-2 support">
+                        <h3>
+                            Hỗ trợ
+                        </h3>
+                        <span>
+                            <a href="1Searching.index.html">
+                                Tìm kiếm
+                            </a>
+                        </span>
+                        <span>
+                            <a href="2Introduction.index.html">
+                                Giới thiệu
+                            </a>
+                        </span>
+                        <span>
+                            <a href="3Restore.index.html">
+                                Chính sách đổi trả
+                            </a>
+                        </span>     
+                        <span>
+                            <a href="4Privacy.index.html">
+                                Chính sách bảo mật
+                            </a>
+                        </span>     
+                        <span>
+                            <a href="5Service.index.html">
+                                Điều khoản dịch vụ
+                            </a>
+                        </span>     
+                        <span>
+                            <a href="6Contact.index.html">
+                                Liên hệ
+                            </a>
+                        </span>     
                     </div>
                 </div>
             </div>
+            <div class="foot-down">
+                <div class="topbar-content text-center">
+                    <p>Copyright © 2022 Fresh Organic. Powered by Haravan</p>
+                </div>
+            </div>
         </div>
-    </footer>
-    <!-- /* End Footer */ -->
+    </div>
+</footer>
+<!-- /* End Footer */ -->
 
-    <script src="finalproject.js"></script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+<script src="finalproject.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
