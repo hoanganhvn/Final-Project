@@ -97,7 +97,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color:#66
     display: block;
 }
 #btn {
-    height: 44px;
     width: 110px;
     border: 1px solid #66a55f;
     background-color: #66a55f;
@@ -109,6 +108,11 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color:#66
 #btn:hover {
     background-color: white;
     color: #66a55f;
+}
+#line {
+    width: 100%;
+    height: 1px;
+    background-color:#ededed;
 }
 /* End Header */
 
@@ -167,17 +171,10 @@ h4 {
     font-size: 15px;
     margin-left: 25px;
 }
-#Introduction {
-    width: 1000px;
-    display: inline-block;
-    position: relative;
-    left: 100px;
-    top: 30px;
-}
 #ul2 {
     margin-left: 40px;
 }
-#Restore {
+#Privacy {
     width: 1000px;
     display: inline-block;
     position: relative;
@@ -220,6 +217,70 @@ img:hover {
     cursor: pointer; 
 }
 
+@media only screen and (max-width: 1023.5px) {
+    img {
+        display: none;
+    }
+    #active {
+        font-size: 12px;
+        margin-left: 8%;
+    }
+    #childWeb4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 400px;
+    }
+    #pageCatalogue4 {
+        display: block;
+        margin: auto;
+        width: 85%;
+        left: 0px;
+        height: fit-content;
+        margin-top: 0px;
+    }
+    #ul1 {
+        margin-left: 10%;
+    }
+    h2 {
+        text-align: center;
+    }
+    #hr {
+        margin: auto;
+        width: 65px;
+        background-color: #000;
+        height: 3px;
+    }
+    #Privacy {
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        left: 0px;
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1329px) {
+    #childWeb4 {
+        margin-bottom: 100px;
+    }
+    #pageCatalogue4 {
+        top: 40px;
+    }
+    #Privacy {
+        width: 60%;
+        position: relative;
+        left: 35%;
+        top: -230px;
+        display: block;
+        padding-left: 50px;
+    }
+    #img4 {
+        position: relative;
+        top: -270px;
+    }
+}
 /* End Body */
 
 

@@ -408,7 +408,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color:#66
     box-sizing: border-box;
     flex: 50%;
     vertical-align: middle;
-    margin-top: 7rem;
+    margin-top: 7+-rem;
 }
 .banner2 {
     margin-top: -5rem;

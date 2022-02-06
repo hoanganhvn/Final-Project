@@ -97,7 +97,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color:#66
     display: block;
 }
 #btn {
-    height: 44px;
     width: 110px;
     border: 1px solid #66a55f;
     background-color: #66a55f;
@@ -166,7 +165,7 @@ h4 {
     font-size: 15px;
     margin-left: 25px;
 }
-#Introduction {
+#Service {
     width: 1000px;
     display: inline-block;
     position: relative;
@@ -175,13 +174,6 @@ h4 {
 }
 #ul2 {
     margin-left: 40px;
-}
-#Restore {
-    width: 1000px;
-    display: inline-block;
-    position: relative;
-    left: 100px;
-    top: 30px;
 }
 .ul3 {
     list-style: initial;
@@ -216,6 +208,71 @@ img:hover {
     -o-transform: scale(1.2);
     -ms-transform: scale(1.2);
     cursor: pointer; 
+}
+
+@media only screen and (max-width: 1023.5px) {
+    img {
+        display: none;
+    }
+    #active {
+        font-size: 12px;
+        margin-left: 8%;
+    }
+    #childWeb5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 400px;
+    }
+    #pageCatalogue5 {
+        display: block;
+        margin: auto;
+        width: 85%;
+        left: 0px;
+        height: fit-content;
+        margin-top: 0px;
+    }
+    #ul1 {
+        margin-left: 10%;
+    }
+    h2 {
+        text-align: center;
+    }
+    #hr {
+        margin: auto;
+        width: 65px;
+        background-color: #000;
+        height: 3px;
+    }
+    #Service {
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        left: 0px;
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1329px) {
+    #childWeb5 {
+        margin-bottom: 100px;
+    }
+    #pageCatalogue5 {
+        top: 40px;
+    }
+    #Service {
+        width: 60%;
+        position: relative;
+        left: 35%;
+        top: -230px;
+        display: block;
+        padding-left: 50px;
+    }
+    #img5 {
+        position: relative;
+        top: -270px;
+    }
 }
 
 /* End Body */
