@@ -71,7 +71,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color:#66
 }
 .navbar{
     font-size: 1.1rem;
-    margin: 15px;
+    margin: 30px;
 }
 .line1 {
     background-color: black;
@@ -107,153 +107,155 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color:#66
 
 
 /* Start Body */
-/* Css for product detail */
-#product{
-    height: 1000px;
+/* Css for blog */
+#blog{
+    height: 2200px;
 }
 
-.product-breadcrumb{
+.blog-breadcrumb{
     background: #f5f5f5; 
     height: 40px;
     padding-left: 75px;
 }
 
-.product-text-breadcrumb{
+.text-breadcrumb{
     list-style: none;
     padding: 0.75rem 1rem;  
 }
-.product-content{  
-    padding: 75px;
+.container-fluid {
+    max-width: 1600px;
+    padding: 20 75px;
+    height: 40px;
+}
+
+.blog-content{
     padding-top: 30px;
+    height: 100%;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
-.product-visual{  
-    display: flex;
-}
-
-.product-gallery{
-    position: sticky;
-    width: 9%;
-    margin-right: 10px;
-    top: 65px
-}
-
-.gallery-img{
-    margin-bottom: 10px;
-    border: 1px solid #f7f7f8;
-    width: 100%;
-}
-
-.gallery-img:hover{
-    border-color: #808284;
-}
-
-.product-slide{
-    width: 91%;
-    padding-left: 10px;
-    position:relative;
-    height: 660px;
-    overflow-y: scroll
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-ul{
-    list-style: none;
-    
-}
-
-.Add-to-card-form{
-    margin-top: 15px;
-}
-
-.product-title {
-    padding: 0 0 10px;
-    border-bottom: 1px dotted #dfe0e1;
-}
-
-.product-title h1 {
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0 0 5px
-}
-
-.product-price {
-    padding: 10px 0;
-    border-bottom: 1px dotted #dfe0e1;
-    font-size: 18px;
-    font-weight: bold;
-    color:red
-}
-
-.qty-btn{
-    float: left;
-    background: #f5f5f5;
-    border: solid 1px #f5f5f5;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 16px;
-    height: 32px;
-    width: 32px;
-}
-
-#quantity {
-    background: #fff;
-    font-weight: 600;
-    height: 32px;
-    text-align: center;
-    width: 70px;
-    border: 1px solid #f5f5f5;
-    float: left;
-    margin: 0;
-}
-
-button{
-    margin-top: 15px;
-}
-
-.product-description .title-bl h2, .product-description h2, .product-description h3 {
-    font-size: 14px;
-    font-weight: 700;
-}
-
-/* Css for cart */
-#cart-view{
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 20px;
-    margin: 15px 0;
-}
-
-#cart-view td{
-    padding: 10px;
-}
-
-.cart-img{
-    width: 90px;
-    border: 1px solid #ededed;
-    padding: 10px;
-    
-}
-
-
-.remove-cart{
-    color: #000;
-    float: right;
-    font-size: 20px;
-}
-
-tbody {
-    display: table-row-group;
-    vertical-align: middle;
-}
-
-td {
+.sidebar{
+    margin: 0 0 30px;
     position: relative;
-    vertical-align: top;
+    padding: 20px;
+    border: 1px solid #e3e5ec;
+    height: 400px;
 }
+
+.sidebar-menu-blog{
+    margin: 0 0 30px;
+    position: relative;
+    padding: 20px;
+    border: 1px solid #e3e5ec;
+    height: 300px;
+}
+.sidebar-title h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+    text-align: center;
+ }
+
+ .sidebar-article{
+    border-bottom: 1px #efefef dotted;
+    padding: 15px 0;
+    height: 22%;
+ }
+ .sidebar-image{
+ float: left;
+ padding-right: 10px;
+}
+
+.sidebar-post{
+    float: left;
+}
+
+ h3{
+    font-size: 14px;
+ }
+
+ .sidebar-menu-list li{
+    list-style: none;
+    color: #252a2b;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 1px;
+ }
+
+ .main-title h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+ }
+
+ .main-item{
+        padding: 13px 0;
+        height: 22%;
+ }
+
+ .image-zoom img{
+    display:block;
+    transition: all .3s ease;
+ }
+ 
+
+ .image-zoom a{
+    display:block;
+    overflow: hidden;
+ }
+ 
+ .image-zoom img:hover{
+   transform: scale(1.2);
+ }
+
+ .margin-bottom{
+     margin: 5px;
+ }
+
+ .header{
+height: 170px;
+ }
+ /*css for new*/
+
+ .new1-content h1 {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+ .new1-img{
+     width: 80%;
+ }
+
+ .new1-info{
+    font-weight: 600;
+ }
+
+ .new1-table{
+    background: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    padding: 8px 30px;
+    margin: 15px 0 20px;
+    width: 100%;
+    border-radius: 6px;
+ }
+
+ .new1-table ol li{
+    margin: 6px 0 0;
+ }
+
+ .new1-table li a{
+    color: #66a55f;
+ }
+
+ .new1-table-title{
+    font-weight: 700;
+    font-size: 16px;
+ }
+
 /* End Body */
 
 
