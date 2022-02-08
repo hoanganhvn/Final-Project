@@ -631,11 +631,15 @@ input[type=text], input[type=password] {
     width: 100%;
 }
 
+.gallery-img:hover{
+    border-color: #808284;
+}
+
 .product-slide{
     width: 91%;
     padding-left: 10px;
     position:relative;
-    height: 600px;
+    height: 660px;
     overflow-y: scroll
 }
 
@@ -700,4 +704,35 @@ button{
 .product-description .title-bl h2, .product-description h2, .product-description h3 {
     font-size: 14px;
     font-weight: 700;
+}
+
+/* Css for cart */
+#cart-view{
+    width: 100%;
+    padding: 0 20px;
+    
+}
+.cart-img{
+    box-sizing: border-box;
+    width: 90px;
+    border: 1px solid #ededed;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+
+.remove-cart{
+    color: #000;
+    float: right;
+    font-size: 20px;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+td {
+    position: relative;
+    vertical-align: top;
 }

@@ -72,12 +72,12 @@
         </div>
         <!-- The Modal cart-->
         <div id="myModal2" class="modal">
-            <div class="modal-content">
+            <div id="model-content" class="modal-content">
                 <div class="cart-head">
                     <span class="close2">&times;</span>
                     <h3>Giỏ hàng</h3>
                 </div>
-                <div class="modal-header-cart">
+                <div id="nulllogo" class="modal-header-cart">
                     <div class="icon-cart">
                         <i class="fa fa-cart-plus"></i>
                     </div>
@@ -245,17 +245,17 @@
                         <div class="product-visual">
                             <div class="product-gallery">
                                 <div class ="gallery-img">
-                                    <a>
+                                    <a href="#img1">
                                 <img src ="Product_images/luu-do-1_bc0171ffa80f4ae782f5757eecf1ab35_fb0cb5b099d54deba8cfa88b19abb394_compact.jpg"/>
                                     </a> 
                                 </div>
                                 <div class ="gallery-img">
-                                    <a>
+                                    <a href="#img2">
                                 <img src ="Product_images/luu-do-2_c8351afb070a4fcf89390aa6f6dd85e7_165f12863d8f4e29b1d3927c8ffcce73_compact.jpg"/>
                                     </a> 
                                 </div>
                                 <div class ="gallery-img">
-                                    <a>
+                                    <a href="#img3">
                                 <img src ="Product_images/luu-do_d1353f79422c48f1ab3ecf1b3d28e557_94a064f7ccee4826bd7e6963c00dc10a_compact.jpg"  />
                                     </a>
                                 </div>
@@ -264,13 +264,13 @@
                             <div class="product-slide scroll">
                                 <ul>
                                     <li>
-                                        <img src="Product_images/luu-do-1_bc0171ffa80f4ae782f5757eecf1ab35_fb0cb5b099d54deba8cfa88b19abb394_master.jpg">
+                                        <img id ="img1" src="Product_images/luu-do-1_bc0171ffa80f4ae782f5757eecf1ab35_fb0cb5b099d54deba8cfa88b19abb394_master.jpg">
                                     </li>
                                     <li>
-                                        <img src="Product_images/luu-do-2_c8351afb070a4fcf89390aa6f6dd85e7_165f12863d8f4e29b1d3927c8ffcce73_master.jpg">
+                                        <img id ="img2" src="Product_images/luu-do-2_c8351afb070a4fcf89390aa6f6dd85e7_165f12863d8f4e29b1d3927c8ffcce73_master.jpg">
                                     </li>
                                     <li>
-                                        <img src="Product_images/luu-do_d1353f79422c48f1ab3ecf1b3d28e557_94a064f7ccee4826bd7e6963c00dc10a_master.jpg">
+                                        <img id ="img3" src="Product_images/luu-do_d1353f79422c48f1ab3ecf1b3d28e557_94a064f7ccee4826bd7e6963c00dc10a_master.jpg">
                                     </li>
                                 </ul>
                             </div>
@@ -286,9 +286,9 @@
                         </div>
                         <form class="Add-to-card-form">
                             <div>
-                                <input type ="button" value="-" onclick="minusQuantity" class="qty-btn">
+                                <input type ="button" value="-" onclick="minusQuantity()" class="qty-btn">
                                 <input type ="text" id="quantity" value="1" min="1" class="quantity-selector">
-                                <input type ="button" value="+" onclick="plusQuantity" class="qty-btn">
+                                <input type ="button" value="+" onclick="plusQuantity()" class="qty-btn">
                             </div>
                             <div>
                                 <button type="button" id="add-to-cart" class="add-cart">Thêm vào giỏ</button>

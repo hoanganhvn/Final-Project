@@ -91,3 +91,45 @@ bars.addEventListener("click",function(){
     let navlist = document.querySelector(".navlist");
     navlist.classList.toggle("active");
 });
+
+//Product_detail, add and subtract product
+let productValue = Number(document.getElementById("quantity").value);
+let quantity = document.getElementById("quantity")
+function plusQuantity(){
+  productValue += 1;
+  quantity.value = productValue;
+}
+function minusQuantity(){
+  if(productValue>1){
+  productValue -= 1;
+  quantity.value = productValue;
+  }
+}
+
+//Add product to cart
+let btnAdd = document.getElementById("add-to-cart");
+let nulllogo= document.getElementById("nulllogo")
+let modelContent = document.getElementById("model-content")
+let cartRow = document.createElement('div')
+var cartRowContents = `
+  <table id="cart-view">
+        <tbody>
+        <tr class="item_2">
+					<td class="cart-img"><a><img src="Product_images/luu-do-1_bc0171ffa80f4ae782f5757eecf1ab35_fb0cb5b099d54deba8cfa88b19abb394_compact.jpg"></a></td>
+					<td>
+						<p class="pro-title">	Lựu đỏ Peru</p>
+							<div class="pro-quantity-view"><span class="qty-value">1</span></div>
+          </td>
+          <td>					
+							<div class="pro-price-view">200,000₫</div>
+						<div class="remove-cart" onclick="deleteCart(1)">x</div>	
+					</td>
+				</tr>
+        </tbody>
+  </table>`
+  cartRow.innerHTML = cartRowContents
+btnAdd.addEventListener("click",function(){
+  modal2.style.display = "block";
+  modelContent.replaceChild(cartRow,nulllogo)
+})
+
