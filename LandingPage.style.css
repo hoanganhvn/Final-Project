@@ -401,11 +401,11 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color:#66
 }
 .banner2 {
     margin-top: -5rem;
-    margin-left: -3px;
+    margin-left: -5px;
 }
 .banner-item {
     overflow: hidden;
-    margin: 5px;
+    margin: 8px;
 }
 .banner-img {
     width: 38.5rem;
@@ -437,6 +437,11 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color:#66
     margin-top: 80px;
 }
 
+@media only screen and (max-width: 1275px) {
+    .banner2 {
+        margin-top: -8px;
+    }
+}
 /* End Body */
 
 /* Start Footer */
