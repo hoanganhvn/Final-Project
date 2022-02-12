@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Fresh Organic</title>
+    <link rel="shortcut icon" href="//theme.hstatic.net/1000309753/1000718324/14/favicon.png?v=209" type="image/png" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,
+    700&subset=vietnamese" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+  </head>
+
+  <body>
+    <!-- /* Start Header */ -->
+      <header class="header">
+
+        <!-- The Modal search-->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="blank-search"></div>
+                    <h2>TÌM KIẾM</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="search">
+                        <input class="col-sm-9 input" type="text" placeholder="Tìm kiếm sản phẩm">
+                        <i class='fa fa-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal login-->
+        <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div id="total">
+                    <div class="user-title">
+                        <h3>ĐĂNG NHẬP TÀI KHOẢN</h3>
+                        <span class="close1">&times;</span>
+                    </div>
+                    <form class="content" >
+                        <div class="container">
+                            <input id="username" value="" type="text" placeholder="Email" name="uname" required>
+                            <p id="warning1">* Bạn cần nhập đúng email</p>
+                            <input id="pass" type="password" value="" placeholder="Mật khẩu" name="psw" required>
+                            <p id="warning2">* Bạn cần nhập đúng password</p>
+                            <h6>
+                                Khi bạn nhấn vào nút đăng nhập là đồng ý vô điều kiện với <span class="policy"><a href="https://policies.google.com/terms">Điều khoản Dịch vụ</a></span> và <span class="policy"><a href="https://policies.google.com/privacy">Bảo mật</a></span> của chúng tôi.
+                            </h6>
+                            <button type="submit" id="myForm">ĐĂNG NHẬP</button>
+                        </div>
+                    </form>
+                    <h6 class="link-register">
+                        Khách hàng mới? <span class="policy"><a href="https://policies.google.com/privacy">Tạo tài khoản</a></span>
+                    </h6>
+                    <h6 class="link-register">
+                        Quên mật khẩu? <span class="policy"><a href="https://policies.google.com/privacy">Khôi phục mật khẩu</a></span>
+                    </h6>
+                </div>
+             </div>
+           </div>
+        </div>
+        <!-- The Modal cart-->
+        <div id="myModal2" class="modal">
+            <div class="modal-content">
+                <div class="cart-head">
+                    <span class="close2">&times;</span>
+                    <h3>Giỏ hàng</h3>
+                </div>
+                <div class="modal-header-cart">
+                    <div class="icon-cart">
+                        <i class="fa fa-cart-plus"></i>
+                    </div>
+                    <div class="word-cart">
+                        <h4>Hiện chưa có sản phẩm</h4>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="count-cart">
+                        <div class="count-money">
+                            <span>TỔNG TIỀN:</span>
+                            <span class="money-red">0₫</span>
+                        </div>
+                        <div class="btn-cart">
+                            <button class="money-cart1">XEM GIỎ HÀNG</button>
+                            <button class="money-cart2">THANH TOÁN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal Menu-->
+        <div class="navlist">
+            <ul>
+                <li>
+                    <a href="index.html" target="_blank">
+                    Trang chủ
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+                <li>
+                    <a href="#">
+                        Header
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+                <li>
+                    <a href="product.html" target="_blank">
+                        Sản phẩm
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+                <li>
+                    <a href="#">
+                        Product Views
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+                <li>
+                    <a href="#">
+                        Blog
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+                <li>
+                    <a href="#">
+                        Landing Page
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+            </ul>
+        </div>
+        <!-- The Modal Popup-->
+        <div id="myModal3" class="modal">
+            <div class="modal-content modal-get-email">
+                <div class="modal-header-email">
+                    <div class="">
+                        <span class="close3">&times;</span>
+                    </div>
+                    <h2>Đăng ký nhận thông tin</h2>
+                    <h4>
+                        Chúng tôi sẽ cập nhật các chương trình khuyến mãi đến bạn.
+                    </h4>   
+                    <ul>
+                        <li>Giảm giá sản phẩm</li>
+                        <li>Sản phẩm mới</li>
+                        <li>Sản phẩm bán chạy</li>
+                    </ul>
+                </div>
+                <input class="input-email-popup" type="text" placeholder="   Nhập email của bạn">
+                <div class="foot-input-email-popup">
+                ĐĂNG KÝ
+                </div>
+                
+            </div>
+        </div>
+        <!-- End Modal-->
+        <div class="topbar" id="topbar">
+            <div class="container-fluid">
+                <div class="topbar-content text-center">
+                    <p>Miễn phí vận chuyển với đơn hàng trên 300K</p>
+                </div>
+            </div>
+        </div>
+        <div class="logo container-fluid">
+            <div class="col-md-2 fa-bars-icon" id="bars">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="col-md-8 header-logo">	
+                <div class="wrap-logo text-center">
+                    <a href="index.html" target="_blank">
+                    Fresh Organic
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 icon text-right">
+                <i class='fa fa-search fa-search1' id="myBtn"></i>
+               
+                <i class='fa fa-user-circle' id="myBtn1"></i>
+
+                <i class="fa fa-shopping-bag" id="myBtn2"></i>
+            </div>
+        </div>
+        <div class="search-input container-fluid">
+            <div class="col-md-4">
+                <div class="search-input-btn">
+                    <input class="col-sm-9 " type="text" placeholder="Tìm kiếm sản phẩm">
+                    <i class='fa fa-search'></i>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <ul class="nav justify-content-center container-fluid">
+                <li class="nav-item">
+                    <div class="nav-name home1">
+                        <a class="nav-link" href="index.html" target="_blank">Trang chủ</a>
+                        <div class="line1"></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-name home2">
+                        <a class="nav-link" href="#">Header</a>
+                        <div class="line2"></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-name home3">
+                        <a class="nav-link" href="product.html" target="_blank">Sản phẩm</a>
+                        <div class="line3"></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                   <div class="nav-name home4">
+                        <a class="nav-link" href="#">Product Views</a> 
+                        <div class="line4"></div>
+                    </div>
+                </li>
+                <li class="nav-item">                    
+                    <div class="nav-name home5">
+                        <a class="nav-link" href="#">Blog</a>
+                        <div class="line5"></div>
+                    </div>
+                </li>
+                <li class="nav-item">                    
+                    <div class="nav-name home6">
+                        <a class="nav-link" href="#">Landing Page</a>
+                        <div class="line6"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </header>
+      <!-- /* End Header */ -->
+
+
+
+
+      
+
+    <!-- /* Start Body */ -->
+    <div class="container-fluid">
+        <!-- Container for the image gallery -->
+        <div class="container-slide">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+                <img class="img-slide" src="img/home_category_1_banner.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+                <img class="img-slide" src="img/home_category_2_banner.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+                <img class="img-slide" src="img/home_category_3_banner.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+                <img class="img-slide" src="img/home_category_4_banner.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+                <img class="img-slide" src="img/home_category_5_banner.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+                <img class="img-slide" src="img/home_category_3_banner.jpg" style="width:100%">
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Image text -->
+            <div class="caption-container">
+            <p id="caption"></p>
+            </div>
+        
+            <!-- Thumbnail images -->
+            <div class="row-slide">
+            <div class="column">
+                <img class="demo" src="img/home_category_1_banner.jpg" style="width:100%" onclick="currentSlide(1)" alt="Healthy">
+            </div>
+            <div class="column">
+                <img class="demo" src="img/home_category_2_banner.jpg" style="width:100%" onclick="currentSlide(2)" alt="Banh My">
+            </div>
+            <div class="column">
+                <img class="demo" src="img/home_category_3_banner.jpg" style="width:100%" onclick="currentSlide(3)" alt="Breakfast">
+            </div>
+            <div class="column">
+                <img class="demo" src="img/home_category_4_banner.jpg" style="width:100%" onclick="currentSlide(4)" alt="Sandwich">
+            </div>
+            <div class="column">
+                <img class="demo" src="img/home_category_5_banner.jpg" style="width:100%" onclick="currentSlide(5)" alt="Fruits">
+            </div>
+            <div class="column">
+                <img class="demo" src="img/home_category_3_banner.jpg" style="width:100%" onclick="currentSlide(6)" alt="Lunch">
+            </div>
+            </div>
+        </div>
+        <div class="product">
+            <a href="#">
+                Sản phẩm mới
+            </a>
+        </div>
+        <div class="product-detail">
+            <ul class="product-top">
+                <li class="product-list">
+                    <h5 class="discount">-17%</h5>
+                    <div class="img-detail">
+                        <img class="img-detail-1" src="img/cookie-nut_b8022cea560e41e5a33aa4eaa2133f79_376eda5bccef4849a799084162ca6bed_grande.jpg" alt="">
+                    </div>
+                    <a class="name" href="https://fresh-organic-food.myharavan.com/products/banh-quy-hat-de-thom-ngon-600gr">
+                        Bánh quy hạt dẻ
+                    </a>
+                    <h5 class="price">
+                        <span class="price-red">54,000đ</span>
+                        <span class="price-cross">65,000đ</span>
+                    </h5>
+                </li>
+                <li class="product-list">
+                    <h5 class="discount">-17%</h5>
+                    <div class="img-detail">
+                        <img class="img-detail-2" src="img/bo-bit-tet_2443e7102773439793f72d7b527d602c_ae2fbbfe59e645dbb069c75e56391978_grande.jpg" alt="">
+                    </div>
+                    <a class="name" href="https://fresh-organic-food.myharavan.com/products/bo-bit-tet-kieu-y-500gr">
+                        Bò bít tết kiểu Ý 500g
+                    </a>
+                    <h5 class="price">
+                        <span class="price-red">250,000đ</span>
+                        <span class="price-cross">300,000đ</span>
+                    </h5>
+                </li>
+                <li class="product-list">
+                    <h5 class="discount">-23%</h5>
+                    <div class="img-detail">
+                        <img class="img-detail-3" src="img/ca-kho-1_ec1e080c6a3c44ddae9aca1e236c296e_3ee22c7886734cceab03c4920a45174d_grande.jpg" alt="">
+                    </div>
+                    <a class="name" href="https://fresh-organic-food.myharavan.com/products/ca-ri-ca-bot-an-do">
+                        Cà ri cá bớt Ấn Độ
+                    </a>
+                    <h5 class="price">
+                        <span class="price-red">100,000đ</span>
+                        <span class="price-cross">130,000đ</span>
+                    </h5>
+                </li>
+                <li class="product-list">
+                    <h5 class="discount">-6%</h5>
+                    <div class="img-detail">
+                        <img class="img-detail-4" src="img/cherry_1d1e51c3515245ce933ff609875ea357_e200984dc2a443fd8fad7614e5714083_grande.jpg" alt="">
+                    </div>
+                    <a class="name" href="https://fresh-organic-food.myharavan.com/products/cherry-do-my-size-9-5-hop-500g">
+                        Cherry đỏ Mỹ size 9.5
+                    </a>
+                    <h5 class="price">
+                        <span class="price-red">150,000đ</span>
+                        <span class="price-cross">160,000đ</span>
+                    </h5>
+                </li>
+                <li class="product-list">
+                    <h5 class="discount discount-5">0</h5>
+                    <div class="img-detail">
+                        <img class="img-detail-5" src="img/dua-hau-6_6f6cfd3bf2be410c8b9cbc8a443dc4c9_72a8d4084b934d269888c01e588011d5_grande.jpg" alt="">
+                    </div>
+                    <a class="name" href="https://fresh-organic-food.myharavan.com/products/dua-hau-do-khong-hat-long-an-trai-3-2kg">
+                        Dưa hấu không hạt
+                    </a>
+                    <h5 class="price">
+                        <span class="price-red price-red-5">20,000đ</span>
+                        <span class="price-cross"></span>
+                    </h5>
+                </li>
+                <li class="product-list">
+                    <h5 class="discount">-20%</h5>
+                    <div class="img-detail">
+                        <img class="img-detail-6" src="img/cam-1_d1069e59cda146fe90e8b23bf1c7b249_9361ea332c704edaa7f5d9c1860fc80f_grande.jpg" alt="">
+                    </div>
+                    <a class="name" href="https://fresh-organic-food.myharavan.com/products/nho-khong-hat-my">
+                        Nho đỏ Crimson Úc
+                    </a>
+                    <h5 class="price">
+                        <span class="price-red">120,000đ</span>
+                        <span class="price-cross">150,000đ</span>
+                    </h5>
+                </li>
+            </ul>
+        </div>
+        <div class="product-img">
+            <div class="breakfast">
+                <div class="product-img-scale">
+                    <img class="product-img-scale-1" src="img/block_home_category1.jpg" alt="">
+                </div>
+                <h4 class="word1">Khuyến mãi tới 50%</h4>
+                <h2 class="word2">Món ngon buổi sáng</h2>
+                <h4 class="word3">MUA NGAY</h4>
+            </div>
+            <div class="france">
+                <div class="product-img-scale">
+                    <img class="product-img-scale-2" src="img/block_home_category2.jpg" alt="">
+                </div>
+                <h4 class="word1">BOUILLABAISSE</h4>
+                <h2 class="word2">SALAD KIỂU PHÁP</h2>
+                <h4 class="word3">XEM THÊM</h4>
+            </div>
+            <div class="healthy">
+                <div class="product-img-scale">
+                    <img class="product-img-scale-3" src="img/block_home_category3.jpg" alt="">
+                </div>
+                <h4 class="word1">Sản phẩm mới</h4>
+                <h2 class="word2">BUỔI SÁNG HEALTHY</h2>
+                <h4 class="word3">XEM THÊM</h4>
+            </div>
+        </div>
+        <div class="product-best">
+            <a href="#">
+                Sản phẩm bán chạy
+            </a>
+        </div>
+        <div class="product-detail-2">
+            <div class="product-detail">
+                <ul class="product-top">
+                    <li class="product-list">
+                        <h5 class="discount discount-5">0</h5>
+                        <div class="img-detail">
+                            <img class="img-detail-1" src="img/dua-hau-1_a51dfc663ed344bca88b4e746a8b3a2f_9575d8fba3ae45b9b80ae69cdb56c9f0_grande.jpg" alt="">
+                        </div>
+                        <a class="name" href="https://fresh-organic-food.myharavan.com/products/banh-quy-hat-de-thom-ngon-600gr">
+                            Dưa Hấu Không Hạt
+                        </a>
+                        <h5 class="price">
+                            <span class="price-red price-red-5">20,000đ</span>
+                            <span class="price-cross"></span>
+                        </h5>
+                    </li>
+                    <li class="product-list">
+                        <h5 class="discount discount-5">0</h5>
+                        <div class="img-detail">
+                            <img class="img-detail-2" src="img/ca-chua-4_25bebd7bd2484e258a4709da1971e0ae_c6faf6ea88a64713b8663fb369491eba_grande.jpg" alt="">
+                        </div>
+                        <a class="name" href="https://fresh-organic-food.myharavan.com/products/bo-bit-tet-kieu-y-500gr">
+                            Cà Chua Đà Lạt tươi
+                        </a>
+                        <h5 class="price">
+                            <span class="price-red price-red-5">10,000đ</span>
+                            <span class="price-cross"></span>
+                        </h5>
+                    </li>
+                    <li class="product-list">
+                        <h5 class="discount">-50%</h5>
+                        <div class="img-detail">
+                            <img class="img-detail-3" src="img/nam_41fcf7d49af34a4e91ad2663862eae98_7c036b36a03c43889775653db7dee45a_grande.jpg" alt="">
+                        </div>
+                        <a class="name" href="https://fresh-organic-food.myharavan.com/products/ca-ri-ca-bot-an-do">
+                            Nấm Bào Ngư Xám Tươi 
+                        </a>
+                        <h5 class="price">
+                            <span class="price-red">100,000đ</span>
+                            <span class="price-cross">200,000đ</span>
+                        </h5>
+                    </li>
+                    <li class="product-list">
+                        <h5 class="discount discount-5">0</h5>
+                        <div class="img-detail">
+                            <img class="img-detail-4" src="img/trung_076e3658a6e448bda26239b94f10e571_17d511ab207048eaa75fdde74026ad92_grande.jpg" alt="">
+                        </div>
+                        <a class="name" href="https://fresh-organic-food.myharavan.com/products/cherry-do-my-size-9-5-hop-500g">
+                            Trứng Gà Thảo Mộc
+                        </a>
+                        <h5 class="price">
+                            <span class="price-red price-red-5">86,000đ</span>
+                            <span class="price-cross"></span>
+                        </h5>
+                    </li>
+                    <li class="product-list">
+                        <h5 class="discount discount-5">0</h5>
+                        <div class="img-detail">
+                            <img class="img-detail-5" src="img/chicken-meat_0fa64993af7f439bb49ecb2a3d3aada7_62e74a048ffc499ab188302748b3554a_grande.jpg" alt="">
+                        </div>
+                        <a class="name" href="https://fresh-organic-food.myharavan.com/products/dua-hau-do-khong-hat-long-an-trai-3-2kg">
+                            Ức Gà Ướp gia vị cay
+                        </a>
+                        <h5 class="price">
+                            <span class="price-red price-red-5">200,000đ</span>
+                            <span class="price-cross"></span>
+                        </h5>
+                    </li>
+                    <li class="product-list">
+                        <h5 class="discount">-20%</h5>
+                        <div class="img-detail">
+                            <img class="img-detail-6" src="img/cam-1_d1069e59cda146fe90e8b23bf1c7b249_9361ea332c704edaa7f5d9c1860fc80f_grande.jpg" alt="">
+                        </div>
+                        <a class="name" href="https://fresh-organic-food.myharavan.com/products/nho-khong-hat-my">
+                            Cam vàng NewZealand
+                        </a>
+                        <h5 class="price">
+                            <span class="price-red">120,000đ</span>
+                            <span class="price-cross">150,000đ</span>
+                        </h5>
+                    </li>
+                    <li class="product-list">
+                        <h5 class="discount">-17%</h5>
+                        <div class="img-detail">
+                            <img class="img-detail-1" src="img/khoai-tay_2b816295c1b3401e9add700e7ff8937c_06888b16e6b542f6b05f709c5cae5cf5_grande.jpg" alt="">
+                        </div>
+                        <a class="name" href="https://fresh-organic-food.myharavan.com/products/banh-quy-hat-de-thom-ngon-600gr">
+                            Khoai Tây Bi Đà Lạt
+                        </a>
+                        <h5 class="price">
+                            <span class="price-red">54,000đ</span>
+                            <span class="price-cross">65,000đ</span>
+                        </h5>
+                    </li>
+                    <li class="product-list">
+                        <h5 class="discount discount-5">0</h5>
+                        <div class="img-detail">
+                            <img class="img-detail-2" src="img/cam-4_b1be682b1df24b098c3a086405b46e7e_596e3b20f1d04f7796e8e342bbe85aa5_grande.jpg" alt="">
+                        </div>
+                        <a class="name" href="https://fresh-organic-food.myharavan.com/products/bo-bit-tet-kieu-y-500gr">
+                            Cam Vàng Ai Cập
+                        </a>
+                        <h5 class="price">
+                            <span class="price-red price-red-5">40,000đ</span>
+                            <span class="price-cross"></span>
+                        </h5>
+                    </li>
+                    <li class="product-list">
+                        <h5 class="discount">-23%</h5>
+                        <div class="img-detail">
+                            <img class="img-detail-3" src="img/hat-de_607185f5265d43dab2f53c4f4b11c50c_11656769c6554d74a084f363737d027c_grande.jpg" alt="">
+                        </div>
+                        <a class="name" href="https://fresh-organic-food.myharavan.com/products/ca-ri-ca-bot-an-do">
+                            Hạt dẻ cười rang sẵn
+                        </a>
+                        <h5 class="price">
+                            <span class="price-red">100,000đ</span>
+                            <span class="price-cross">130,000đ</span>
+                        </h5>
+                    </li>
+                    <li class="product-list">
+                        <h5 class="discount discount-5">0</h5>
+                        <div class="img-detail">
+                            <img class="img-detail-4" src="img/tao_9b109fb4d777472ca8bc09ce8d72119d_8a56c73eebad42339d49d203a540f87c_grande.jpg" alt="">
+                        </div>
+                        <a class="name" href="https://fresh-organic-food.myharavan.com/products/cherry-do-my-size-9-5-hop-500g">
+                            Táo Juliet Hữu Cơ Pháp
+                        </a>
+                        <h5 class="price">
+                            <span class="price-red price-red-5">150,000đ</span>
+                            <span class="price-cross"></span>
+                        </h5>
+                    </li>
+                    <li class="product-list">
+                        <h5 class="discount discount-5">0</h5>
+                        <div class="img-detail">
+                            <img class="img-detail-5" src="img/cai-xanh_4bab4a65d8424af887618235dab20c13_c96b70a705d44cb0ada6509b00076118_grande.jpg" alt="">
+                        </div>
+                        <a class="name" href="https://fresh-organic-food.myharavan.com/products/dua-hau-do-khong-hat-long-an-trai-3-2kg">
+                            Cải xanh Đà Lạt Tươi
+                        </a>
+                        <h5 class="price">
+                            <span class="price-red price-red-5">20,000đ</span>
+                            <span class="price-cross"></span>
+                        </h5>
+                    </li>
+                    <li class="product-list">
+                        <h5 class="discount discount-5">0</h5>
+                        <div class="img-detail">
+                            <img class="img-detail-6" src="img/dua-leo_fa5654ee448044e7bae2ff3fafd27ce6_99c71fb5c8404bc79dd7fd14b669af99_grande.jpg" alt="">
+                        </div>
+                        <a class="name" href="https://fresh-organic-food.myharavan.com/products/nho-khong-hat-my">
+                            Dưa chuột organic
+                        </a>
+                        <h5 class="price">
+                            <span class="price-red price-red-5">20,000đ</span>
+                            <span class="price-cross"></span>
+                        </h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about-img">
+                <div class="about-img-scale">
+                    <img class="about-img-scale-1" src="img/home_about_image.jpg" alt="">
+                </div>
+                <h1 class="about-img-word2">Về chúng tôi</h1>
+                <h3 class="about-img-word3">XEM NGAY</h3>
+            </div>
+            <div class="about-word">
+                <p>
+                    Trang giới thiệu giúp khách hàng hiểu rõ hơn về cửa hàng của bạn. Hãy cung cấp thông tin cụ thể về việc kinh doanh, về cửa hàng, thông tin liên hệ. Điều này sẽ giúp khách hàng cảm thấy tin tưởng khi mua hàng trên website của bạn.
+                </p>
+                <p>
+                    Một vài gợi ý cho nội dung trang Giới thiệu:
+                </p>   
+                <p>
+                    Bạn là ai
+                </p>
+                <p>
+                    Giá trị kinh doanh của bạn là gì
+                </p>
+                <p>
+                    Địa chỉ cửa hàng
+                </p>
+                <p>
+                    Bạn đã kinh doanh trong ngành hàng này bao lâu rồi
+                </p>
+                <p>
+                    Bạn kinh doanh ngành hàng online được bao lâu
+                </p>
+                <p>
+                    Đội ngũ của bạn gồm những ai
+                </p>
+                <p>
+                    Thông tin liên hệ
+                </p>
+                <p>
+                    Liên kết đến các trang mạng xã hội (Twitter, Facebook)
+                </p>
+                <p>
+                    Bạn có thể chỉnh sửa hoặc xoá bài viết này <span class="black-word"><a href="https://fresh-organic-food.myharavan.com/adminv2/sale_channels/web/pages/1000592972">tại đây</a></span>  hoặc thêm những bài viết mới trong phần quản lý <span class="black-word"><a href="https://fresh-organic-food.myharavan.com/adminv2/sale_channels/web/pages/1000592972">Trang nội dung.</a></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- /* End Body */ -->
+
+
+
+
+
+    
+    <!-- /* Start Footer */ -->
+    <footer class="footertotal">
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="foot-up">
+                    <div class="row">
+                        <div class="col-md-1 col-lg-1 blank">
+                        </div>
+                        <div class="col-md-11 col-lg-2 foot-icon-email">
+                            <i class="fa fa-envelope-open-o"></i>
+                            <span>
+                                Đăng ký nhận tin
+                            </span>
+                        </div>
+                        <div class="col-md-12 col-lg-5 foot-email">
+                            <div class="container">
+                                <div class="row">
+                                    <input class="col-md-6 col-lg-9 input-email" type="text" placeholder="   Nhập email của bạn">
+                                    <div class="col-md-2 col-lg-3 foot-input-email">
+                                    ĐĂNG KÝ
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-1 col-lg-1 blank">
+                        </div>
+                        <div class="col-md-12 col-lg-3 foot-register">
+                            <i class='fa fa-phone phone-icon'></i>
+                            <span> Hỗ trợ / Mua hàng: </span>
+                            <span class="hotline">1900 636 099</span>
+                            
+                        </div>
+                        <div class="foot-icon-support"></div>
+                    </div>
+                </div>
+                <div class="foot-middle">
+                    <div class="row">
+                        <div class="col-lg-1 blank">
+                        </div>
+                        <div class="col-md-6 col-lg-4 introdution">
+                            <h3>Giới thiệu</h3>
+                            <span>
+                                Fresh Organic trang mua sắm trực tuyến của thương hiệu thời trang Lama, thời trang nam, nữ, phụ kiện, giúp bạn tiếp cận xu hướng thời trang mới nhất.
+                            </span>
+                            <a href="#">
+                                <img src="https://theme.hstatic.net/1000309753/1000718324/14/logo_bct.png?v=209" alt="">
+                            </a>
+                            <div class="foot-icon">
+                                <i class='fa fa-facebook'>
+                                    <a href="https://fresh-organic-food.myharavan.com/"></a>
+                                </i>
+                                <i class='fa fa-twitter'>
+                                    <a href="https://fresh-organic-food.myharavan.com/"></a>
+                                </i>
+                                <i class='fa fa-instagram'>
+                                    <a href="https://fresh-organic-food.myharavan.com/"></a>
+                                </i>
+                                <i class='fa fa-google'>
+                                    <a href="https://fresh-organic-food.myharavan.com/"></a>
+                                </i>
+                                <i class='fa fa-youtube-play'>
+                                    <a href="https://fresh-organic-food.myharavan.com/"></a>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 infomation">
+                            <h3>Thông tin liên hệ</h3>
+                            <div class="address">
+                                <i class='fa fa-map-marker'></i>
+                                <div class="address-detail">
+                                    <span>
+                                        Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="phone">
+                                <i class='fa fa-phone'></i>
+                                <span type="tel">
+                                    1900.636.099
+                                </span>
+                            </div>
+                            <div class="fax">
+                                <i class='fa fa-print'></i>
+                                <span>
+                                    <a href="tel:+1900636099">
+                                        1900.636.099
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="email">
+                                <i class='fa fa-envelope'></i>
+                                <span>
+                                    hi@haravan.com
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-2 link">
+                            <h3>
+                                Liên kết
+                            </h3>
+                            <span>
+                                <a href="https://fresh-organic-food.myharavan.com/collections/onsale">
+                                    Sản phẩm khuyến mãi
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://fresh-organic-food.myharavan.com/collections/hot-products">
+                                    Sản phẩm nổi bật
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://fresh-organic-food.myharavan.com/collections/all">
+                                    Tất cả sản phẩm
+                                </a>
+                            </span>     
+                        </div>
+                        <div class="col-md-6 col-lg-2 support">
+                            <h3>
+                                Hỗ trợ
+                            </h3>
+                            <span>
+                                <a href="https://fresh-organic-food.myharavan.com/search">
+                                    Tìm kiếm
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://fresh-organic-food.myharavan.com/pages/about-us">
+                                    Giới thiệu
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://fresh-organic-food.myharavan.com/pages/chinh-sach-doi-tra">
+                                    Chính sách đổi trả
+                                </a>
+                            </span>     
+                            <span>
+                                <a href="https://fresh-organic-food.myharavan.com/pages/chinh-sach-bao-mat">
+                                    Chính sách bảo mật
+                                </a>
+                            </span>     
+                            <span>
+                                <a href="https://fresh-organic-food.myharavan.com/pages/dieu-khoan-dich-vu">
+                                    Điều khoản dịch vụ
+                                </a>
+                            </span>     
+                            <span>
+                                <a href="https://fresh-organic-food.myharavan.com/pages/lien-he">
+                                    Liên hệ
+                                </a>
+                            </span>     
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-down">
+                    <div class="topbar-content text-center">
+                        <p>Copyright © 2022 Fresh Organic. Powered by Haravan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /* End Footer */ -->
+
+    <script src="home.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
