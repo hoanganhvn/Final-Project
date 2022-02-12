@@ -22,7 +22,7 @@ li1.addEventListener("click", function() {
     hr3.style.display = "none";
     li4.style.color = "gray";
     hr4.style.display = "none";
-    outstanding.style.display = "block";
+    outstanding.style.display = "flex";
     promotion.style.display = "none";
     news.style.display = "none";
     best.style.display = "none";
@@ -37,7 +37,7 @@ li2.addEventListener("click", function() {
     li4.style.color = "gray";
     hr4.style.display = "none";
     outstanding.style.display = "none";
-    promotion.style.display = "block";
+    promotion.style.display = "flex";
     news.style.display = "none";
     best.style.display = "none";
 })
@@ -52,7 +52,7 @@ li3.addEventListener("click", function() {
     hr4.style.display = "none";
     outstanding.style.display = "none";
     promotion.style.display = "none";
-    news.style.display = "block";
+    news.style.display = "flex";
     best.style.display = "none";
 })
 li4.addEventListener("click", function() {
@@ -67,47 +67,37 @@ li4.addEventListener("click", function() {
     outstanding.style.display = "none";
     promotion.style.display = "none";
     news.style.display = "none";
-    best.style.display = "block";
+    best.style.display = "flex";
 })
 
-let row3 = document.querySelector(".row3");
-let seemore = document.querySelector(".seemore");
+let row3 = document.querySelectorAll(".row3");
+let outstanding__btn = document.querySelector(".outstanding__btn");
 
-seemore.addEventListener("click", function() {
-    seemore.style.display = "none";
-    row3.style.display = "block";
+outstanding__btn.addEventListener("click", function() {
+    outstanding__btn.style.display = "none";
+    for (let i = 0; i < row3.length; i++) {
+        row3[i].style.display = "block";
+    }
 })
 
-let row3new = document.querySelector(".row3new");
-let seemorenew = document.querySelector(".seemorenew");
+let news__row3 = document.querySelectorAll(".news__row3");
+let news__btn = document.querySelector(".news__btn");
 
-seemorenew.addEventListener("click", function() {
-    seemorenew.style.display = "none";
-    row3new.style.display = "block";
+news__btn.addEventListener("click", function() {
+    news__btn.style.display = "none";
+    for (let i = 0; i < news__row3.length; i++) {
+        news__row3[i].style.display = "block";
+    }
 })
 
-let copy1 = document.querySelector(".copy1");
+let concessionary__row3 = document.querySelectorAll(".concessionary__row3");
+let concessionary__btn = document.querySelector(".concessionary__btn");
 
-copy1.addEventListener("click", function() {
-    copy1.innerHTML = "Đã sao chép";
-})
-
-let copy2 = document.querySelector(".copy2");
-
-copy2.addEventListener("click", function() {
-    copy2.innerHTML = "Đã sao chép";
-})
-
-let copy3 = document.querySelector(".copy3");
-
-copy3.addEventListener("click", function() {
-    copy3.innerHTML = "Đã sao chép";
-})
-
-let copy4 = document.querySelector(".copy4");
-
-copy4.addEventListener("click", function() {
-    copy4.innerHTML = "Đã sao chép";
+concessionary__btn.addEventListener("click", function() {
+    concessionary__btn.style.display = "none";
+    for (let i = 0; i < concessionary__row3.length; i++) {
+        concessionary__row3[i].style.display = "block";
+    }
 })
 
 let li10 = document.querySelector(".li10");  
@@ -118,9 +108,9 @@ let hr10 = document.querySelector(".hr10");
 let hr20 = document.querySelector(".hr20");
 let hr30 = document.querySelector(".hr30");
 
-let supero = document.querySelector(".supero");
 let concessionary = document.querySelector(".concessionary");
 let hot = document.querySelector(".hot");
+let supero = document.querySelector(".supero");
 
 li10.addEventListener("click", function() {
     li10.style.color = "black";
@@ -129,7 +119,7 @@ li10.addEventListener("click", function() {
     hr20.style.display = "none";
     li30.style.color = "gray";
     hr30.style.display = "none";
-    concessionary.style.display = "block";
+    concessionary.style.display = "flex";
     hot.style.display = "none";
     supero.style.display = "none";
 })
@@ -141,7 +131,7 @@ li20.addEventListener("click", function() {
     li30.style.color = "gray";
     hr30.style.display = "none";
     concessionary.style.display = "none";
-    hot.style.display = "block";
+    hot.style.display = "flex";
     supero.style.display = "none";
 })
 li30.addEventListener("click", function() {
@@ -153,13 +143,5 @@ li30.addEventListener("click", function() {
     hr10.style.display = "none";
     concessionary.style.display = "none";
     hot.style.display = "none";
-    supero.style.display = "block";
-})
-
-let row30 = document.querySelector(".row30");
-let seemore0 = document.querySelector(".seemore0");
-
-seemore0.addEventListener("click", function() {
-    seemore0.style.display = "none";
-    row30.style.display = "block";
+    supero.style.display = "flex";
 })

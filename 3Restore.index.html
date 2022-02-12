@@ -449,6 +449,19 @@
 </footer>
 <!-- /* End Footer */ -->
 
+<script>
+    let width = window.innerWidth;
+    let ul1 = document.getElementById("ul1");
+    let pagecatalogue = document.getElementById("pagecatalogue");
+
+    if (width <= 1023) {
+        ul1.style.display = "none";
+        pagecatalogue.style.cursor = "pointer";
+        pagecatalogue.addEventListener("click", function() {
+            ul1.style.display = "block";
+        })
+    }
+</script>
 <script src="finalproject.js"></script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
