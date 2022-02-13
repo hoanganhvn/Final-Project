@@ -1,4 +1,4 @@
-let li1 = document.querySelector(".li1");  
+let li1 = document.querySelector(".li1");
 let li2 = document.querySelector(".li2");
 let li3 = document.querySelector(".li3");
 let li4 = document.querySelector(".li4");
@@ -13,7 +13,7 @@ let promotion = document.querySelector(".promotion");
 let news = document.querySelector(".news");
 let best = document.querySelector(".best-selling");
 
-li1.addEventListener("click", function() {
+li1.addEventListener("click", function () {
     li1.style.color = "black";
     hr1.style.display = "block";
     li2.style.color = "gray";
@@ -27,7 +27,7 @@ li1.addEventListener("click", function() {
     news.style.display = "none";
     best.style.display = "none";
 })
-li2.addEventListener("click", function() {
+li2.addEventListener("click", function () {
     li2.style.color = "black";
     hr2.style.display = "block";
     li1.style.color = "gray";
@@ -41,7 +41,7 @@ li2.addEventListener("click", function() {
     news.style.display = "none";
     best.style.display = "none";
 })
-li3.addEventListener("click", function() {
+li3.addEventListener("click", function () {
     li3.style.color = "black";
     hr3.style.display = "block";
     li2.style.color = "gray";
@@ -55,7 +55,7 @@ li3.addEventListener("click", function() {
     news.style.display = "flex";
     best.style.display = "none";
 })
-li4.addEventListener("click", function() {
+li4.addEventListener("click", function () {
     li4.style.color = "black";
     hr4.style.display = "block";
     li2.style.color = "gray";
@@ -73,7 +73,7 @@ li4.addEventListener("click", function() {
 let row3 = document.querySelectorAll(".row3");
 let outstanding__btn = document.querySelector(".outstanding__btn");
 
-outstanding__btn.addEventListener("click", function() {
+outstanding__btn.addEventListener("click", function () {
     outstanding__btn.style.display = "none";
     for (let i = 0; i < row3.length; i++) {
         row3[i].style.display = "block";
@@ -83,7 +83,7 @@ outstanding__btn.addEventListener("click", function() {
 let news__row3 = document.querySelectorAll(".news__row3");
 let news__btn = document.querySelector(".news__btn");
 
-news__btn.addEventListener("click", function() {
+news__btn.addEventListener("click", function () {
     news__btn.style.display = "none";
     for (let i = 0; i < news__row3.length; i++) {
         news__row3[i].style.display = "block";
@@ -93,14 +93,14 @@ news__btn.addEventListener("click", function() {
 let concessionary__row3 = document.querySelectorAll(".concessionary__row3");
 let concessionary__btn = document.querySelector(".concessionary__btn");
 
-concessionary__btn.addEventListener("click", function() {
+concessionary__btn.addEventListener("click", function () {
     concessionary__btn.style.display = "none";
     for (let i = 0; i < concessionary__row3.length; i++) {
         concessionary__row3[i].style.display = "block";
     }
 })
 
-let li10 = document.querySelector(".li10");  
+let li10 = document.querySelector(".li10");
 let li20 = document.querySelector(".li20");
 let li30 = document.querySelector(".li30");
 
@@ -112,7 +112,7 @@ let concessionary = document.querySelector(".concessionary");
 let hot = document.querySelector(".hot");
 let supero = document.querySelector(".supero");
 
-li10.addEventListener("click", function() {
+li10.addEventListener("click", function () {
     li10.style.color = "black";
     hr10.style.display = "block";
     li20.style.color = "gray";
@@ -123,7 +123,7 @@ li10.addEventListener("click", function() {
     hot.style.display = "none";
     supero.style.display = "none";
 })
-li20.addEventListener("click", function() {
+li20.addEventListener("click", function () {
     li20.style.color = "black";
     hr20.style.display = "block";
     li10.style.color = "gray";
@@ -134,7 +134,7 @@ li20.addEventListener("click", function() {
     hot.style.display = "flex";
     supero.style.display = "none";
 })
-li30.addEventListener("click", function() {
+li30.addEventListener("click", function () {
     li30.style.color = "black";
     hr30.style.display = "block";
     li20.style.color = "gray";
@@ -145,3 +145,40 @@ li30.addEventListener("click", function() {
     hot.style.display = "none";
     supero.style.display = "flex";
 })
+
+
+
+
+
+
+
+
+
+
+
+
+let future = new Date('February 28,2022 00:00:00').getTime();
+setInterval(function () {
+    let present = new Date().getTime();
+    let delta = future - present;
+    let days = Math.floor(delta / (1000 * 60 * 60 * 24));
+    let hours = Math.floor(delta / (1000 * 60 * 60));
+    let minutes = Math.floor(delta / (1000 * 60));
+    let seconds = Math.floor(delta / 1000);
+
+    hours %= 24;
+    minutes %= 60;
+    seconds %= 60;
+
+    document.getElementsByClassName("days").innerText = days;
+    document.getElementsByClassName("hours").innerText = hours;
+    document.getElementsByClassName("minutes").innerText = minutes;
+    document.getElementsByClassName("seconds").innerText = seconds;
+
+    console.log(present);
+    console.log(future);
+    console.log(seconds);
+    console.log(delta);
+    console.log(hours);
+    console.log(minutes);
+}, 1000)
