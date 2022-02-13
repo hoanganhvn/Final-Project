@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Fresh Organic</title>
+    <link rel="shortcut icon" href="//theme.hstatic.net/1000309753/1000718324/14/favicon.png?v=209" type="image/png" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,
+    700&subset=vietnamese" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="article_2.css">
+  </head>
+
+  <body>
+    <!-- /* Start Header */ -->
+      <header class="header">
+
+        <!-- The Modal search-->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="blank-search"></div>
+                    <h2>TÌM KIẾM</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="search">
+                        <input class="col-sm-9 input" type="text" placeholder="Tìm kiếm sản phẩm">
+                        <i class='fa fa-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal login-->
+        <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div id="total">
+                    <div class="user-title">
+                        <h3>ĐĂNG NHẬP TÀI KHOẢN</h3>
+                        <span class="close1">&times;</span>
+                    </div>
+                    <form class="content" >
+                        <div class="container">
+                            <input id="username" value="" type="text" placeholder="Email" name="uname" required>
+                            <p id="warning1">* Bạn cần nhập đúng email</p>
+                            <input id="pass" type="password" value="" placeholder="Mật khẩu" name="psw" required>
+                            <p id="warning2">* Bạn cần nhập đúng password</p>
+                            <h6>
+                                Khi bạn nhấn vào nút đăng nhập là đồng ý vô điều kiện với <span class="policy"><a href="https://policies.google.com/terms">Điều khoản Dịch vụ</a></span> và <span class="policy"><a href="https://policies.google.com/privacy">Bảo mật</a></span> của chúng tôi.
+                            </h6>
+                            <button type="submit" id="myForm">ĐĂNG NHẬP</button>
+                        </div>
+                    </form>
+                    <h6 class="link-register">
+                        Khách hàng mới? <span class="policy"><a href="https://policies.google.com/privacy">Tạo tài khoản</a></span>
+                    </h6>
+                    <h6 class="link-register">
+                        Quên mật khẩu? <span class="policy"><a href="https://policies.google.com/privacy">Khôi phục mật khẩu</a></span>
+                    </h6>
+                </div>
+             </div>
+           </div>
+        </div>
+        <!-- The Modal cart-->
+        <div id="myModal2" class="modal">
+            <div class="modal-content">
+                <div class="cart-head">
+                    <span class="close2">&times;</span>
+                    <h3>Giỏ hàng</h3>
+                </div>
+                <div class="modal-header-cart">
+                    <div class="icon-cart">
+                        <i class="fa fa-cart-plus"></i>
+                    </div>
+                    <div class="word-cart">
+                        <h4>Hiện chưa có sản phẩm</h4>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="count-cart">
+                        <div class="count-money">
+                            <span>TỔNG TIỀN:</span>
+                            <span class="money-red">0₫</span>
+                        </div>
+                        <div class="btn-cart">
+                            <button class="money-cart1">XEM GIỎ HÀNG</button>
+                            <button class="money-cart2">THANH TOÁN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navlist">
+            <ul>
+                <li>
+                    <a href="Home.html" target="_blank">
+                    Trang chủ
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+                <li>
+                    <a href="#">
+                        Header
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+                <li>
+                    <a href="product.html" target="_blank">
+                        Sản phẩm
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+                <li>
+                    <a href="Lựu_đỏ_Peru.html" target="_blank">
+                        Product Views
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+                <li>
+                    <a href="blog.html" target="_blank">
+                        Blog
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+                <li>
+                    <a href="#">
+                        Landing Page
+                    </a>
+                    <div class="line-menu"></div>
+                </li>
+            </ul>
+        </div>
+        <!-- End Modal-->
+        <div class="topbar" id="topbar">
+            <div class="container-fluid">
+                <div class="topbar-content text-center">
+                    <p>Miễn phí vận chuyển với đơn hàng trên 300K</p>
+                </div>
+            </div>
+        </div>
+        <div class="logo container-fluid">
+            <div class="col-md-2 fa-bars-icon" id="bars">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="col-md-8 header-logo">	
+                <div class="wrap-logo text-center">
+                    <a href="Home.html" target="_blank">
+                    Fresh Organic
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 icon text-right">
+                <i class='fa fa-search fa-search1' id="myBtn"></i>
+               
+                <i class='fa fa-user-circle' id="myBtn1"></i>
+
+                <i class="fa fa-shopping-bag" id="myBtn2"></i>
+            </div>
+        </div>
+        <div class="search-input container-fluid">
+            <div class="col-md-4">
+                <div class="search-input-btn">
+                    <input class="col-sm-9 " type="text" placeholder="Tìm kiếm sản phẩm">
+                    <i class='fa fa-search'></i>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <ul class="nav justify-content-center container-fluid">
+                <li class="nav-item">
+                    <div class="nav-name home1">
+                        <a class="nav-link" href="Home.html" target="_blank">Trang chủ</a>
+                        <div class="line1"></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-name home2">
+                        <a class="nav-link" href="#">Header</a>
+                        <div class="line2"></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-name home3">
+                        <a class="nav-link" href="product.html" target="_blank">Sản phẩm</a>
+                        <div class="line3"></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                   <div class="nav-name home4">
+                        <a class="nav-link" href="Lựu_đỏ_Peru.html" target="_blank">Product Views</a> 
+                        <div class="line4"></div>
+                    </div>
+                </li>
+                <li class="nav-item">                    
+                    <div class="nav-name home5">
+                        <a class="nav-link" href="blog.html" target="_blank">Blog</a>
+                        <div class="line5"></div>
+                    </div>
+                </li>
+                <li class="nav-item">                    
+                    <div class="nav-name home6">
+                        <a class="nav-link" href="#">Landing Page</a>
+                        <div class="line6"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </header>
+      <!-- /* End Header */ -->
+
+
+
+
+      
+
+    <!-- /* Start Body */ -->
+    <div id = "blog">
+        <div class="blog-breadcrumb">
+                <ol class ="text-breadcrumb">
+                    <li style="display: inline-block">
+                      <a href="Home.html">Trang chủ </a>
+                    </li>
+                    <li style="display: inline-block">
+                      /
+                    </li>
+                    <li style="display: inline-block">
+                    <a href="blog.html">Tin tức</a>
+                    </li>
+                    <li style="display: inline-block">
+                        /
+                    </li>
+                    <li style="display: inline-block">
+                        Nước uống ngon từ rau má, đơn giản và bổ dưỡng
+                    </li>
+                </ol>
+        </div>
+        <div class="blog-content">
+              <div class = "row">
+                  <div class="col-md-3 col-sm-12 col-xs-12 ">
+                      <div class ="sidebar">
+                          <div class ="sidebar-title">
+                          <h2>Bài viết mới nhất</h2>
+                          </div>
+
+                          <div class="sidebar-article">
+                            <div class ="sidebar-image" style ="width: 30%">
+                             <img src ="Trang_Image/sap-mung-1-thanh-hoa-hong-mach-cach-lam-gio-ngu-sac-hinh-hoa-dep-lung-linh-de-thap-huong-6b4-5372426.jpg"/>
+                            </div>
+                            <div class ="sidebar-post" style ="width: 70%">
+                             <h3>
+                                 7 loại giò thể thiếu trong ngày Tết cổ truyền Việt Nam
+                             </h3>
+                             <span style="font-size: 13px">Fresh Organic Food 30.01.2022</span>
+                            </div>
+                           </div>
+
+                           <div class="sidebar-article">
+                            <div class ="sidebar-image" style ="width: 30%">
+                             <img src ="Trang_Image/blog01_grande.jpg"/>
+                            </div>
+                            <div class ="sidebar-post" style ="width: 70%">
+                             <h3>
+                                Công thức món tráng miệng giải ngấy dịp Tết
+                             </h3>
+                             <span style="font-size: 13px">Fresh Organic Food 30.01.2022</span>
+                            </div>
+                           </div>
+
+                           <div class="sidebar-article">
+                            <div class ="sidebar-image" style ="width: 30%">
+                             <img src ="Trang_Image/blog02_grande.jpg"/>
+                            </div>
+                            <div class ="sidebar-post" style ="width: 70%">
+                             <h3>
+                                 Làm báng ngọt kiểu Pháp từ nguyên liệu đơn giản 
+                             </h3>
+                             <span style="font-size: 13px">Fresh Organic Food 05.07.2021</span>
+                            </div>
+                           </div>
+                        
+                      </div>
+                      <div class ="sidebar-menu-blog">
+                            <div class ="sidebar-title">
+                                <h2>Danh mục blog</h2>
+                            </div>
+                            <div>
+                            <ul class ="sidebar-menu-list">
+                                <li>Trang chủ</li>
+                                <li>Header</li>
+                                <li>Sản phẩm</li>
+                                <li>Product Views</li>
+                                <li>Blog</li>
+                                <li>Landing Page</li>
+                            </ul>
+                            </div>
+                      </div>
+                  </div>
+                  <div class="col-md-9 col-sm-12 col-xs-12">
+                     <div class="new1-content">                        	                     
+                            <div>
+                                <img class="new1-img" src="Trang_Image/blog07_large.jpg">
+                            </div>
+                            <h1>Nước uống ngon từ rau má, đơn giản và bổ dưỡng</h1>
+                            <div class="new1-info">
+                                <p> Người viết: Fresh Organic Food lúc 05.07.2021 
+                                <i class="fa fa-file-text-o"></i><a href="blog.html"> Tin tức</p>                                    
+                            </div>								
+                          
+                            <div class="new1-table">
+                                <div class="new1-table-title">Cách làm nước ép rau má
+                                    <a href="#Hidden" id="new1-hidden-icon" style="color:#66a55f;font-size: 13px;display: -webkit-inline-box" onclick="hiddenTable()">[ Ẩn ]</a>
+                                    <a href="#Expand" id="new1-expand-icon" style="color:#66a55f;font-size: 13px;display: none" onclick="expandTable()">[ Hiện ]</a>
+                                </div>
+                             <div id ="new1-list">
+                             <ol>
+                                <li><a href="#cach1">Cách 1: Nước ép rau má nguyên chất</a></li>
+                                <li><a href="#cach2">Cách 2: Nước ép rau má đậu xanh</a></li>
+                             </ol>
+                             </div>
+                            </div>
+                        
+                        <div class="new1-body">
+                            <p>Mùa hè nóng bức thế này chúng ta nên làm một cốc nước ép rau má cùng chút đá mát lạnh là đã có thể giải khát tuyệt vời được rồi. Rau má là một loại rau rất quen thuộc chúng ta và đặc biệt rau má có rất nhiều công dụng như thanh lọc cơ thể, trị mụn đẹp da. Cùng tìm hiểu những công thức làm nước ép rau má ngon tuyệt nhé.</p>
+                            <div>
+                              <ul>
+                                <li><h2 id="cach1" style="font-size:18px;"><strong>Cách 1: Nước ép rau má nguyên chất</strong></h2></li>
+                              </ul>
+                                <p><strong>Nguyên liệu làm nước ép rau má</strong></p>
+                                <ul style="list-style-type:'-';">
+                                    <li>Rau má</li>
+                                    <li>Nước lọc</li>
+                                    <li>Đường</li>
+                                    <li>Đá lạnh</li>
+                                </ul> 
+                                <p><strong>Cách làm nước ép rau má</strong></p>
+                                <p><strong>Bước 1:</strong> Bạn hãy ngắt bỏ bớt thân cứng của rau má sau đó rửa sạch thật kĩ và để vào rổ cho ráo nước.</p>
+                                <p><strong>Bước 2:</strong> Bây giờ bạn cho rau má vào máy sinh tố rồi xay cho rau má thật mịn (thêm một ít nước lọc để khi xay được dễ dàng hơn nhé)</p>
+                                <p><strong>Bước 3:</strong> Sau khi xay xong bạn dùng rây lọc bã rau má để lấy nước cốt rồi tiếp tục xay cho hết phần rau má.</p>
+                                <p><strong>Bước 4:</strong> Rót ra cốc và và thêm một ít đường cho dễ uống.</p>
+                                <p>Như vậy là bạn có thể thưởng thức một cốc nước ép rau má ngon tuyệt và đầy hấp dẫn. Thêm một ít đá lạnh nếu muốn.</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><h2 id="cach2" style="font-size:18px;"><strong>Cách 2: Nước ép rau má đậu xanh</strong></h2></li>
+                                </ul>
+                                <p><strong>Nguyên liệu làm nước ép rau má đậu xanh</strong></p>
+                                <ul style="list-style-type:'-';">
+                                    <li> Rau má tươi: 200gr</li>
+                                    <li>Đậu xanh đã cà vỏ: 100gr</li>
+                                    <li>Đường cát trắng:50gr</li>
+                                    <li>Nước lọc: 800ml</li>
+                                </ul> 
+                                <p><strong>Cách làm nước ép xay rau má đậu xanh</strong></p>
+                                <p><strong>Bước 1:</strong> Trước hết xử lý sạch sẽ phần rau má. Bạn ngắt bỏ bớt phần thân cứng của rau má. Loại bỏ sạch rễ và lá vàng, lá hỏng. Ngâm nước muối loãng 10 phút rồi rửa sạch kĩ, cắt nhỏ để ráo.</p>
+                                <p><strong>Bước 2:</strong> Đậu xanh đem ngâm nước ấm khoảng 4-6 tiếng cho mềm. Sau đó rửa sạch để ráo. Rồi cho vào nồi nấu nhừ và tắt bếp để nguội bớt.</p>
+                                <p><strong>Bước 3:</strong> Cho phần rau má đã xử lý vào máy xay sinh tố. Thêm nước lọc vào xay nhuyễn. Nếu dùng máy xay nguyên xác thì bạn không cần lọc bã. Còn nếu dùng máy xay thông thường, bạn lọc bỏ bã, giữ lại phần nước.</p>
+                                <p><strong>Bước 4:</strong> Lấy phần đậu xanh đã sơ chế ở bước 2 cho vào máy xay sinh tố cùng đường. Đổ nước rau má đã lọc vào. Bật máy xay đến khi nhuyễn nát, xanh mịn là được.</p>
+                                <p>Nếm thử vị của ly nước uống để thêm bớt lượng đường cho phù hợp. Khi đã vừa miệng, rót ra ly thủy tinh, cho đá vào và thưởng thức. Hoặc có thể uống nóng không cần đá, hay cho vào ngăn mát tủ lạnh để dùng dần.</p>
+                            </div>
+                           
+                           
+                            
+
+                           
+                            
+                    
+                        
+                     </div>
+                  </div>
+              </div>
+
+        </div>
+    </div>
+    <!-- /* End Body */ -->
+
+
+    <!-- /* Start Footer */ -->
+    <footer class="footertotal">
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="foot-up">
+                    <div class="row">
+                        <div class="col-md-1 col-lg-1 blank">
+                        </div>
+                        <div class="col-md-11 col-lg-2 foot-icon-email">
+                            <i class="fa fa-envelope-open-o"></i>
+                            <span>
+                                Đăng ký nhận tin
+                            </span>
+                        </div>
+                        <div class="col-md-12 col-lg-5 foot-email">
+                            <div class="container">
+                                <div class="row">
+                                    <input class="col-md-6 col-lg-9 input-email" type="text" placeholder="   Nhập email của bạn">
+                                    <div class="col-md-2 col-lg-3 foot-input-email">
+                                    ĐĂNG KÝ
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-1 col-lg-1 blank">
+                        </div>
+                        <div class="col-md-12 col-lg-3 foot-register">
+                            <i class='fa fa-phone phone-icon'></i>
+                            <span> Hỗ trợ / Mua hàng: </span>
+                            <span class="hotline">1900 636 099</span>
+                            
+                        </div>
+                        <div class="foot-icon-support"></div>
+                    </div>
+                </div>
+                <div class="foot-middle">
+                    <div class="row">
+                        <div class="col-lg-1 blank">
+                        </div>
+                        <div class="col-md-6 col-lg-4 introdution">
+                            <h3>Giới thiệu</h3>
+                            <span>
+                                Fresh Organic trang mua sắm trực tuyến của thương hiệu thời trang Lama, thời trang nam, nữ, phụ kiện, giúp bạn tiếp cận xu hướng thời trang mới nhất.
+                            </span>
+                            <a href="#">
+                                <img src="https://theme.hstatic.net/1000309753/1000718324/14/logo_bct.png?v=209" alt="">
+                            </a>
+                            <div class="foot-icon">
+                                <i class='fa fa-facebook'>
+                                    <a href="https://fresh-organic-food.myharavan.com/"></a>
+                                </i>
+                                <i class='fa fa-twitter'>
+                                    <a href="https://fresh-organic-food.myharavan.com/"></a>
+                                </i>
+                                <i class='fa fa-instagram'>
+                                    <a href="https://fresh-organic-food.myharavan.com/"></a>
+                                </i>
+                                <i class='fa fa-google'>
+                                    <a href="https://fresh-organic-food.myharavan.com/"></a>
+                                </i>
+                                <i class='fa fa-youtube-play'>
+                                    <a href="https://fresh-organic-food.myharavan.com/"></a>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 infomation">
+                            <h3>Thông tin liên hệ</h3>
+                            <div class="address">
+                                <i class='fa fa-map-marker'></i>
+                                <div class="address-detail">
+                                    <span>
+                                        Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="phone">
+                                <i class='fa fa-phone'></i>
+                                <span type="tel">
+                                    1900.636.099
+                                </span>
+                            </div>
+                            <div class="fax">
+                                <i class='fa fa-print'></i>
+                                <span>
+                                    <a href="tel:+1900636099">
+                                        1900.636.099
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="email">
+                                <i class='fa fa-envelope'></i>
+                                <span>
+                                    hi@haravan.com
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-2 link">
+                            <h3>
+                                Liên kết
+                            </h3>
+                            <span>
+                                <a href="product.html" target="_blank">
+                                    Sản phẩm khuyến mãi
+                                </a>
+                            </span>
+                            <span>
+                                <a href="product.html" target="_blank">
+                                    Sản phẩm nổi bật
+                                </a>
+                            </span>
+                            <span>
+                                <a href="product.html" target="_blank">
+                                    Tất cả sản phẩm
+                                </a>
+                            </span>     
+                        </div>
+                        <div class="col-md-6 col-lg-2 support">
+                            <h3>
+                                Hỗ trợ
+                            </h3>
+                            <span>
+                                <a href="#">
+                                    Tìm kiếm
+                                </a>
+                            </span>
+                            <span>
+                                <a href="#">
+                                    Giới thiệu
+                                </a>
+                            </span>
+                            <span>
+                                <a href="#">
+                                    Chính sách đổi trả
+                                </a>
+                            </span>     
+                            <span>
+                                <a href="#">
+                                    Chính sách bảo mật
+                                </a>
+                            </span>     
+                            <span>
+                                <a href="#">
+                                    Điều khoản dịch vụ
+                                </a>
+                            </span>     
+                            <span>
+                                <a href="#">
+                                    Liên hệ
+                                </a>
+                            </span>     
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-down">
+                    <div class="topbar-content text-center">
+                        <p>Copyright © 2022 Fresh Organic. Powered by Haravan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /* End Footer */ -->
+
+    <script src="article_2.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
