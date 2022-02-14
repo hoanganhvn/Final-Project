@@ -72,7 +72,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color:#66
 .navbar{
     font-size: 1.1rem;
 }
-.line1 {
+/* .line1 {
     background-color: black;
     height: 2px;
 }
@@ -95,7 +95,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{color:#66
 }
 .home6:hover .line6 {
     display: block;
-}
+} */
 /* End Header */
 
 
