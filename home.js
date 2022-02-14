@@ -14,6 +14,7 @@ let span = document.getElementsByClassName("close")[0];
 let span1 = document.getElementsByClassName("close1")[0];
 let span2 = document.getElementsByClassName("close2")[0];
 let span3 = document.getElementsByClassName("close3")[0];
+let span4 = document.getElementsByClassName("foot-input-email-popup")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
@@ -46,6 +47,9 @@ span2.addEventListener("click", function() {
   modal2.style.display = "none";
 });
 span3.addEventListener("click", function() {
+  modal3.style.display = "none";
+});
+span4.addEventListener("click", function() {
   modal3.style.display = "none";
 });
 // span2.onclick = function() {
